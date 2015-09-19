@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$1" = "" ]; then
+echo "Usage: newcmd [name_of_cmd]"
+else
+cd /bin
+nano $1
+chmod +x $1
+fi
